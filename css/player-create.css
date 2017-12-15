@@ -1,0 +1,12 @@
+.form-group.field-player-city_id.required, .field-player-sex,
+.field-player-email, .field-player-birthday, .field-player-activity,
+.field-player-info_source, .field-player-grade_id,
+.field-player-club_card_id, .field-player-comment,
+.field-player-metro_station, #w0 > fieldset > section,
+fieldset > div:nth-child(7) {
+  display: none;
+}
+
+button {
+  margin: 10px 0 0 15px !important;
+}
