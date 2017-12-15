@@ -6,12 +6,16 @@
   "description": "Extension to modify ExitGames CRM usability",
 
   "content_scripts": [{
-    "css": ["css/new-corp.css"],
-    "js": ["js/jquery-3.2.1.js", "js/new-corp.js"],
+    "css": ["css/corp-new.css"],
+    "js": ["js/jquery-3.2.1.min.js", "js/corp-new.js"],
     "matches": ["https://crm.exitgames.ru/corp-pack/create"]},
   {
-    "css": ["css/games.css"],
-    "js": ["js/jquery-3.2.1.js", "js/games.js"],
-    "matches": ["https://crm.exitgames.ru/game/index*"]
+    "css": ["css/games-search.css"],
+    "js": ["js/jquery-3.2.1.min.js", "js/games-search.js"],
+    "matches": ["https://crm.exitgames.ru/game/index*"]},
+  {
+    "css": ["css/player-create.css"],
+    "js": ["js/jquery-3.2.1.min.js", "js/player-create.js"],
+    "matches": [ "https://crm.exitgames.ru/create/player"]
   }]
 }
