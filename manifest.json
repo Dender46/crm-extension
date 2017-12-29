@@ -1,26 +1,36 @@
 {
   "manifest_version": 2,
 
-  "name": "ExitGames CRM Extension by dim4k",
-  "version": "0.1.0",
+  "name": "ExitGames CRM Extension",
+  "version": "0.2.0",
   "description": "Extension to modify ExitGames CRM usability",
 
   "content_scripts": [{
-    "css": ["css/corp-new.css"],
-    "js": ["js/jquery-3.2.1.min.js", "js/corp-new.js"],
-    "matches": ["https://crm.exitgames.ru/corp-pack/create"]
-  }, {
-    "css": ["css/games-search.css"],
-    "js": ["js/jquery-3.2.1.min.js", "js/games-search.js"],
-    "matches": ["https://crm.exitgames.ru/game/index*"]
-  }, {
+    // player
     "css": ["css/player-create.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/player-create.js"],
     "matches": [ "https://crm.exitgames.ru/create/player"]
   }, {
+    // single game
+    "css": ["css/games-search.css"],
+    "js": ["js/jquery-3.2.1.min.js", "js/games-search.js"],
+    "matches": ["https://crm.exitgames.ru/game/index*"]
+  }, {
+    "css": ["css/games-schedule.css"],
+    "js": ["js/jquery-3.2.1.min.js", "js/games-schedule.js"],
+    "matches": ["https://crm.exitgames.ru/game/create?schedule=1*"]    
+  }, {
+    // corp-packs
+    "css": ["css/corp-new.css"],
+    "js": ["js/jquery-3.2.1.min.js", "js/corp-new.js"],
+    "matches": ["https://crm.exitgames.ru/corp-pack/create"]
+  }, {
+    "css": ["css/corp-new.css"],
+    // "js": ["js/jquery-3.2.1.min.js", "js/corp-modify.js"],
+    "matches": [ "https://crm.exitgames.ru/corp-pack/update*"]
+  }, {
     "css": ["css/corp-search.css"],
-    "js": ["js/jquery-3.2.1.min.js", "js/corp-search.js"],
-    "matches": [ "https://crm.exitgames.ru/corp-pack",
-        "https://crm.exitgames.ru/corp-pack/index*"]
+    "js": ["js/jquery-3.2.1.min.js", "js/corp-search.js", "js/games-search.js"],
+    "matches": [ "https://crm.exitgames.ru/corp-pack/index*"]
   }]
 }
