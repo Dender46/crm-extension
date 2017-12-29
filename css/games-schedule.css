@@ -1,0 +1,12 @@
+/* highlighting unnecessary rooms */
+table tr:nth-of-type(4),
+table tr:nth-of-type(5),
+table tr:nth-of-type(6)
+{
+	background-color: #e5e5e5;
+}
+
+/* search button */
+form > button.btn.btn-success {
+	display: block;
+}

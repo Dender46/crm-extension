@@ -1,0 +1,26 @@
+/*corp-pack source*/
+.field-corppacksearch-source,
+/*corp-pack game mode*/
+.field-corppacksearch-mode_id,
+/*corp-pack manager*/
+.field-corppacksearch-manager,
+/*game center*/
+.field-corppacksearch-game_center_id,
+/*corp-pack status*/
+#corppacksearch-status_id::-webkit-scrollbar,
+#corppacksearch-status_id option[value="7"],
+#corppacksearch-status_id option[value="10"],
+/*game center and gamemode in table*/
+table > thead tr th:nth-of-type(9),
+table > thead tr th:nth-of-type(10),
+table > tbody tr td:nth-of-type(9),
+table > tbody tr td:nth-of-type(10)
+{
+  display: none;
+}
+
+/*corp-pack status SECTION*/
+.field-corppacksearch-status_id
+{
+	/*float: right;*/
+}
