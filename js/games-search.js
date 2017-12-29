@@ -83,7 +83,7 @@ $(document).ready(function() {
   $("#today-search").css("padding", "5px 8px");
   $("#next-day-search, #before-day-search").css("padding", "0px 20px");
   $("#next-day-search, #before-day-search").css("font-size", "1.85rem");
-  $("#today-search, #next-day-search, #before-day-search").css("margin", "0 8px 8px 0");
+  $("#today-search, #next-day-search, #before-day-search").css("margin", "0 4px 4px 0");
 
   // SELECT DEFAULT OPTIONS FOR GAMES STATUSES
   $("#gamesearch-game_status_id").attr("size", "6");
