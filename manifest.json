@@ -31,6 +31,7 @@
   }, {
     "css": ["css/corp-search.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/corp-search.js", "js/games-search.js"],
-    "matches": [ "https://crm.exitgames.ru/corp-pack/index*"]
+    "matches": [ "https://crm.exitgames.ru/corp-pack/index*",
+        "https://crm.exitgames.ru/corp-pack"]
   }]
 }
