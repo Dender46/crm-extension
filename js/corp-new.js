@@ -10,17 +10,17 @@ $('#corppack-prepare_start').val('23:00');
 
 // PREPAYMANT DETAILS
 // hiding corppack status unnecesary options
-$("#corppack-status_id option:nth-of-type(1)").hide()
-$("#corppack-status_id option[value='7']").hide()
-$("#corppack-status_id option[value='10']").hide()
+$('#corppack-status_id option:nth-of-type(1)').hide()
+$('#corppack-status_id option[value=\'7\']').hide()
+$('#corppack-status_id option[value=\'10\']').hide()
 
 $('#corppack-percent').val(0);
 var prepayment = $('#corppack-prepayment');
 prepayment.val(0);
-prepayment.on("focus", function() { prepayment.val('') });
-prepayment.on("blur", function() {
+prepayment.on('focus', function() { prepayment.val('') });
+prepayment.on('blur', function() {
   if (prepayment.val() > 0)
-    $("#corppack-status_id").val(2)
+    $('#corppack-status_id').val(2)
 });
 
 // CORPPACK PRICES
@@ -34,19 +34,19 @@ hide_and_seek.val(0)
 laser_tag.val(0)
 vr.val(0);
 
-game.on("focus", function() {
+game.on('focus', function() {
   if (game.val() == 0)
     game.val('')
 })
-hide_and_seek.on("focus", function() {
+hide_and_seek.on('focus', function() {
   if (hide_and_seek.val() == 0)
     hide_and_seek.val('')
 })
-laser_tag.on("focus", function() {
+laser_tag.on('focus', function() {
   if (laser_tag.val() == 0)
     laser_tag.val('')
 })
-vr.on("focus", function() {
+vr.on('focus', function() {
   if (vr.val() == 0)
     vr.val('')
 })
