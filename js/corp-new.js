@@ -52,17 +52,17 @@ vr.on("focus", function() {
 })
 
 // some styling to pack prices on one Row and making it look pretty
-$("div.form-group.field-corppack-game_price.required >" +
-    "section").removeClass("col-4").addClass("col-3")
-$("div.form-group.field-corppack-hide_and_seek_price.required >" +
-    "section").removeClass("col-4").addClass("col-3")
-$("div.form-group.field-corppack-laser_tag_price >" +
-    "section").removeClass("col-4").addClass("col-3")
-$("div.form-group.field-corppack-vr_room_price >" +
-    "section").removeClass("col-4").addClass("col-3")
-$("fieldset:nth-child(7) > div:nth-child(7) > fieldset").css("padding-bottom", "55px")
+$('div.form-group.field-corppack-game_price.required >' +
+    'section').removeClass('col-4').addClass('col-3')
+$('div.form-group.field-corppack-hide_and_seek_price.required >' +
+    'section').removeClass('col-4').addClass('col-3')
+$('div.form-group.field-corppack-laser_tag_price >' +
+    'section').removeClass('col-4').addClass('col-3')
+$('div.form-group.field-corppack-vr_room_price >' +
+    'section').removeClass('col-4').addClass('col-3')
+$('fieldset:nth-child(7) > div:nth-child(7) > fieldset').css('padding-bottom', '55px')
 
 // Moving Date section to Player selection row to reduce space usage
-let dateSection = $("fieldset:nth-child(5) > div > div.form-group.field-corppack-date.required > section")
-let playerRow = $("fieldset:nth-child(3) > div:nth-child(5)")
+let dateSection = $('fieldset:nth-child(5) > div > div.form-group.field-corppack-date.required > section')
+let playerRow = $('fieldset:nth-child(3) > div:nth-child(5)')
 dateSection.prependTo(playerRow)
