@@ -35,7 +35,10 @@ laser_tag.val(0);
 vr.val(0);
 
 function handleInput(e) {
-  if (e.type == 'focus') {
+  console.clear()
+  console.log(typeof $(this).val())
+  console.log(e.type)
+  if (e.type == 'focus' || e.type == 'focusin') {
     if ($(this).val() == 0)
       $(this).val('');
   }
@@ -54,6 +57,10 @@ game.on('blur', handleInput);
 hide_and_seek.on('blur', handleInput);
 laser_tag.on('blur', handleInput);
 vr.on('blur', handleInput);
+
+// ADDITIONAL SERVICES PRICES
+$(document).on('focus focusin', '.service-price', handleInput);
+$(document).on('blur focusout', '.service-price', handleInput);
 
 // some styling to pack prices on one Row and making it look pretty
 $('div.form-group.field-corppack-game_price.required >' +
