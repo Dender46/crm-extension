@@ -34,22 +34,26 @@ hide_and_seek.val(0);
 laser_tag.val(0);
 vr.val(0);
 
-game.on('focus', function() {
-  if (game.val() == 0)
-    game.val('')
-});
-hide_and_seek.on('focus', function() {
-  if (hide_and_seek.val() == 0)
-    hide_and_seek.val('')
-});
-laser_tag.on('focus', function() {
-  if (laser_tag.val() == 0)
-    laser_tag.val('')
-});
-vr.on('focus', function() {
-  if (vr.val() == 0)
-    vr.val('')
-});
+function handleInput(e) {
+  if (e.type == 'focus') {
+    if ($(this).val() == 0)
+      $(this).val('');
+  }
+  else {
+    if ($(this).val() == '')
+      $(this).val(0);
+  }
+}
+
+game.on('focus', handleInput);
+hide_and_seek.on('focus', handleInput);
+laser_tag.on('focus', handleInput);
+vr.on('focus', handleInput);
+
+game.on('blur', handleInput);
+hide_and_seek.on('blur', handleInput);
+laser_tag.on('blur', handleInput);
+vr.on('blur', handleInput);
 
 // some styling to pack prices on one Row and making it look pretty
 $('div.form-group.field-corppack-game_price.required >' +
