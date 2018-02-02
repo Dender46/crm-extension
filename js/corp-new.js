@@ -1,4 +1,4 @@
-// CORPACK INFO
+﻿// CORPACK INFO
 $('#corppack-source').val(1);
 $('#corppack-source_comment').val('default_text');
 $('#corppack-mode_id').val(15);
@@ -77,7 +77,7 @@ $(document).on('change', 'input.service-comment', function() {
   if (notifyNote.is(':hidden'))
     notifyNote.fadeIn(500);
 
-  if ( /(холл)|(зал)/i.test($(this).val()) )
+  if ( /(холл)|(зал)|(кухня)|(малый)/i.test($(this).val()) )
     $('li.room').fadeIn(500);
   if ( /(админ)|(доп)/i.test($(this).val()) )
     $('li.admins').fadeIn(500);
