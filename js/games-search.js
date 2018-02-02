@@ -5,7 +5,7 @@ $(document).ready(function() {
   let year = date.getFullYear();
 
   // to correct dates
-  // ex. != 1.1.1970 but rather == 01.01.1970
+  // ex. not 1.1.1970 but rather 01.01.1970
   function setCorrectDate(day, month, year) {
     let date;
     if (day < 10)
