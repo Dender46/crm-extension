@@ -10,3 +10,10 @@ fieldset > div:nth-child(7) {
 button {
   margin: 10px 0 0 15px !important;
 }
+
+/* To prevent phone-number input from sliding to right */
+.field-player-first_name .help-block {
+	width: auto;
+	height: 20px;
+}
+
