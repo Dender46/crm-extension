@@ -22,11 +22,11 @@
   }, {
     // corp-packs
     "css": ["css/corp-new.css"],
-    "js": ["js/jquery-3.2.1.min.js", "js/corp-new.js"],
+    "js": ["js/jquery-3.2.1.min.js", "js/corp-new.js", "js/corp-notifier.js"],
     "matches": ["https://crm.exitgames.ru/corp-pack/create"]
   }, {
     "css": ["css/corp-new.css"],
-    "js": ["js/jquery-3.2.1.min.js", "js/corp-modify.js"],
+    "js": ["js/jquery-3.2.1.min.js", "js/corp-modify.js", "js/corp-notifier.js"],
     "matches": [ "https://crm.exitgames.ru/corp-pack/update*"]
   }, {
     "css": ["css/corp-search.css"],

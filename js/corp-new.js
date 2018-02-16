@@ -59,32 +59,6 @@ vr.blur(handleInput);
 $(document).on('focus focusin', '.service-price', handleInput);
 $(document).on('blur focusout', '.service-price', handleInput);
 
-// Additional services notifier
-$('table.services-table').after(
-  `<div class='notify'>
-    <span class='glyphicon glyphicon-warning-sign'></span><h3> Напоминание:</h3>
-    <ul>
-      <li class='vr'>Забронируйте VR если взяли холл</li>
-      <li class='room'>Не забудьте проверить/поставить зал в календаре</li>
-      <li class='admins'>Напишите кол-во доп. админов в комментарии</li>
-    </ul>
-  </div>`);
-const notifyNote = $('div.notify');
-notifyNote.children('ul').children('li').hide();
-notifyNote.hide();
-
-$(document).on('change', 'input.service-comment', function() {
-  if (notifyNote.is(':hidden'))
-    notifyNote.fadeIn(500);
-
-  if ( /(холл)|(зал)|(кухня)|(малый)/i.test($(this).val()) )
-    $('li.room').fadeIn(500);
-  if ( /(админ)|(доп)/i.test($(this).val()) )
-    $('li.admins').fadeIn(500);
-  if ( /(холл)/i.test($(this).val()) )
-    $('li.vr').fadeIn(500);
-});
-
 // some styling to pack prices on one Row and making it look pretty
 $('div.form-group.field-corppack-game_price.required > section')
   .removeClass('col-4').addClass('col-3');
@@ -100,7 +74,3 @@ $('fieldset:nth-child(7) > div:nth-child(7) > fieldset').css('padding-bottom', '
 const dateSection = $('fieldset:nth-child(5) > div > div.form-group.field-corppack-date.required > section');
 const playerRow   = $('fieldset:nth-child(3) > div:nth-child(5)');
 dateSection.prependTo(playerRow);
-
-// chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
-//   console.log(response.farewell);
-// });

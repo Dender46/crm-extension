@@ -42,11 +42,15 @@ div.notify {
 
 div.notify h3 {
 	display: inline-block;
-	margin-left: 8px;
+	margin: 0 0 8px 8px;
 }
 
 div.notify ul {
 	margin-left: 20px;
+}
+
+div.notify li {
+	padding: 4px;
 }
 
 /* SERVICES TABLE*/
