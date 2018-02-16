@@ -48,3 +48,14 @@ game.on('blur', handleInput);
 hide_and_seek.on('blur', handleInput);
 laser_tag.on('blur', handleInput);
 vr.on('blur', handleInput);
+
+// some styling to pack prices on one Row and making it look pretty
+$('div.form-group.field-corppack-game_price.required > section')
+  .removeClass('col-4').addClass('col-3');
+$('div.form-group.field-corppack-hide_and_seek_price.required > section')
+  .removeClass('col-4').addClass('col-3');
+$('div.form-group.field-corppack-laser_tag_price > section')
+  .removeClass('col-4').addClass('col-3');
+$('div.form-group.field-corppack-vr_room_price > section')
+  .removeClass('col-4').addClass('col-3');
+$('fieldset:nth-child(7) > div:nth-child(7) > fieldset').css('padding-bottom', '55px');
