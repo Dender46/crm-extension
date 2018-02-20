@@ -10,7 +10,7 @@
     "css": ["css/player-create.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/player-create.js"],
     "matches": [ "https://crm.exitgames.ru/create/player"]
-  }, {
+  },{
     // single game
     "css": ["css/games-search.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/games-search.js"],
@@ -28,6 +28,10 @@
     "css": ["css/corp-new.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/corp-modify.js", "js/corp-notifier.js"],
     "matches": [ "https://crm.exitgames.ru/corp-pack/update*"]
+  }, {
+    "css": ["css/corp-view.css"],
+    // "js": ["js/jquery-3.2.1.min.js", "js/corp-modify.js"],
+    "matches": [ "https://crm.exitgames.ru/corp-pack/view*"]    
   }, {
     "css": ["css/corp-search.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/corp-search.js", "js/games-search.js"],

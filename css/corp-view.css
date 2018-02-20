@@ -1,0 +1,11 @@
+.detail-view tr:nth-of-type(5),  /* service percent */
+.detail-view tr:nth-of-type(10), /* amusement price */
+.detail-view tr:nth-of-type(11), /* amusement price */
+.detail-view tr:nth-of-type(12), /* gamemode */
+.detail-view tr:nth-of-type(13), /* gamecenter */
+.detail-view tr:nth-of-type(17), /* time */
+.detail-view tr:nth-of-type(18), /* time */
+.detail-view tr:nth-of-type(19)  /* time */
+{
+	display: none;
+}
