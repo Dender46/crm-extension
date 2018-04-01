@@ -1,7 +1,7 @@
 /* highlighting unnecessary rooms */
-table tr:nth-of-type(3),
-table tr:nth-of-type(4),
-table tr:nth-of-type(5)
+.table-bordered tr:nth-of-type(3),
+.table-bordered tr:nth-of-type(4),
+.table-bordered tr:nth-of-type(5)
 {
 	background-color: #e5e5e5;
 }
