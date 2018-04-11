@@ -1,13 +1,3 @@
-// CORPACK INFO
-$('#corppack-source').val(1);
-$('#corppack-source_comment').val('default_text');
-$('#corppack-mode_id').val(15);
-
-//  DATE AND TIME
-$('#corppack-time_start').val('23:00');
-$('#corppack-time_end').val('23:00');
-$('#corppack-prepare_start').val('23:00');
-
 // PREPAYMANT DETAILS
 // hiding corppack status unnecesary options
 $('#corppack-status_id option:nth-of-type(1)').hide();
