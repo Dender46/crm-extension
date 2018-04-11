@@ -1,7 +1,7 @@
 ﻿// CORPACK INFO
 $('#corppack-source').val(1);
 $('#corppack-source_comment').val('default_text');
-$('#corppack-mode_id').val(15);
+$('#corppack-mode_id').val(24);
 
 //  DATE AND TIME
 $('#corppack-time_start').val('23:00');

@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "ExitGames CRM Extension",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Extension to modify ExitGames CRM usability",
 
   "content_scripts": [{
@@ -18,7 +18,7 @@
   }, {
     "css": ["css/games-schedule.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/games-schedule.js"],
-    "matches": ["https://crm.exitgames.ru/game/create?schedule=1*"]    
+    "matches": ["https://crm.exitgames.ru/game/create?schedule=1*"]
   }, {
     // corp-packs
     "css": ["css/corp-new.css"],
@@ -31,7 +31,7 @@
   }, {
     "css": ["css/corp-view.css"],
     // "js": ["js/jquery-3.2.1.min.js", "js/corp-modify.js"],
-    "matches": [ "https://crm.exitgames.ru/corp-pack/view*"]    
+    "matches": [ "https://crm.exitgames.ru/corp-pack/view*"]
   }, {
     "css": ["css/corp-search.css"],
     "js": ["js/jquery-3.2.1.min.js", "js/corp-search.js", "js/games-search.js"],
