@@ -1,5 +1,3 @@
-$('#corppack-mode_id').val(24);
-
 // PREPAYMANT DETAILS
 // hiding corppack status unnecesary options
 $('#corppack-status_id option:nth-of-type(1)').hide();
