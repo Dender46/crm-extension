@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "ExitGames CRM Extension",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Extension to modify ExitGames CRM usability",
 
   "content_scripts": [{
