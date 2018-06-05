@@ -73,3 +73,8 @@ $('fieldset:nth-child(7) > div:nth-child(7) > fieldset').css('padding-bottom', '
 const dateSection = $('fieldset:nth-child(5) > div > div.form-group.field-corppack-date.required > section');
 const playerRow   = $('fieldset:nth-child(3) > div:nth-child(5)');
 dateSection.prependTo(playerRow);
+
+// removes autocomplete with bunch of dates
+$(document).ready(function(){ 
+  $("input").attr("autocomplete", "off");
+});

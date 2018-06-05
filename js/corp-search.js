@@ -9,3 +9,8 @@ const searchRow = document.querySelector("#w0 .row:nth-of-type(2)");
 
 const playerBooked = document.querySelector(".field-corppacksearch-player_booked_id");
 searchRow.insertBefore(playerBooked, corpStatusSection);
+
+// removes autocomplete with bunch of dates
+$(document).ready(function(){ 
+  $("input").attr("autocomplete", "off");
+});

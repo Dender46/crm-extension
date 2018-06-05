@@ -88,3 +88,8 @@ $("#today-search, #next-day-search, #before-day-search").css("margin", "0 4px 4p
 $("#gamesearch-game_status_id").attr("size", "7");
 $("#gamesearch-game_status_id option[value=3]").attr("selected", "true");
 $("#gamesearch-game_status_id option[value=5]").attr("selected", "true");
+
+// removes autocomplete with bunch of dates
+$(document).ready(function(){ 
+  $("input").attr("autocomplete", "off");
+});
